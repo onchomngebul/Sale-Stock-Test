@@ -8,9 +8,11 @@ Soal no 2 : BigData_Sort.java
 
 Soal no 3 : FunctionAPI.java
 
-Penjelasan lain dari setiap pertanyaan ada di dalam file tersebut
+Penjelasan lain dari setiap pertanyaan ada di dalam file tersebut. 
+File .txt lainnya hanya data yang dibutuhkan sesuai petunjuk soal.
 
 Best Regards,
+
 
 
 Buchori W Hidayat
