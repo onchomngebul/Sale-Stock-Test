@@ -38,7 +38,7 @@ public class Sorting_Age {
             //declare filename
             File file = new File("sorted_" + fileName);
             
-            // if file doesn't exists, then create it
+        	// if file doesn't exists, then create it
          	if (!file.exists()) {
          		file.createNewFile();
          	}
@@ -91,6 +91,8 @@ public class Sorting_Age {
 	 however, this algorithm can not be used to handle Big Data due to the limited 
 	 amount elements in the array (the maximum array elements is 2 ^ 31-6)
 	 Can't handle for 7 Billion people data of the earth
+	 
+	 more explanation at BigData_Sort.java
 	 */
 }
 
