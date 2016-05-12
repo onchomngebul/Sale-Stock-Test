@@ -14,29 +14,29 @@ public class Sorting_Age {
         String line = null;
 
         try {
-            // FileReader reads text files
-            FileReader fileReader = new FileReader(fileName);
+        	// FileReader reads text files
+        	FileReader fileReader = new FileReader(fileName);
 
-            // wrap FileReader in BufferedReader.
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+        	// wrap FileReader in BufferedReader.
+        	BufferedReader bufferedReader = new BufferedReader(fileReader);
             
-            //declare list
-            List<Integer> listAge = new ArrayList<Integer>();
+        	//declare list
+        	List<Integer> listAge = new ArrayList<Integer>();
             
-            //input data to list
-            while((line = bufferedReader.readLine()) != null) {
-                listAge.add(Integer.parseInt(line));
-            }   
+        	//input data to list
+        	while((line = bufferedReader.readLine()) != null) {
+        		listAge.add(Integer.parseInt(line));
+        	}   
             
-            // close files.
-            bufferedReader.close();  
+        	// close files.
+        	bufferedReader.close();  
             
-            //sorting begin, it using counting sort algorithm
-            Integer[] arrayAge = listAge.toArray(new Integer[listAge.size()]);
-            int[] sortedAge = countingSort(arrayAge, maxAge);
+        	//sorting begin, it using counting sort algorithm
+        	Integer[] arrayAge = listAge.toArray(new Integer[listAge.size()]);
+        	int[] sortedAge = countingSort(arrayAge, maxAge);
                 
-            //declare filename
-            File file = new File("sorted_" + fileName);
+        	//declare filename
+        	File file = new File("sorted_" + fileName);
             
         	// if file doesn't exists, then create it
          	if (!file.exists()) {
